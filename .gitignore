@@ -59,6 +59,8 @@ coverage.xml
 *.log
 local_settings.py
 db.sqlite3
+*.sqlite3
+
 db.sqlite3-journal
 
 # Flask stuff:
@@ -104,11 +106,13 @@ celerybeat.pid
 # Environments
 .env
 .venv
+.idea
 env/
 venv/
 ENV/
 env.bak/
 venv.bak/
+
 
 # Spyder project settings
 .spyderproject
@@ -127,3 +131,5 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+media/
+staticfiles/
