@@ -1,3 +1,4 @@
+from django.conf import settings
 from django.db import models
 
 
@@ -31,3 +32,8 @@ class Article(models.Model):
     def __str__(self):
         return self.title
 
+    @property
+    def get_image_url(self):
+        if settings.DEBUG:
+            return f"http://127.0.0.1:8000{self.image.url}"
+        return f"http://smth.uz{self.image.url}"

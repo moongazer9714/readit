@@ -25,6 +25,8 @@ urlpatterns = [
     path('about/', include("apps.about.urls", namespace="about")),
     path('comment/', include("apps.comments.urls", namespace="comments")),
     path('contact/', include("apps.contact.urls", namespace="contacts")),
+
+    path('api/', include("apps.articles.api.urls"))
 ]
 
 if settings.DEBUG:
